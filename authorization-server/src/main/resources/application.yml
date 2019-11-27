@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+token:
+  sign: xiaoer
+
+spring:
+  redis:
+    host: 172.168.1.108
+    port: 6379
+    password: gggyvw

@@ -1,0 +1,20 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: pay
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1.com:7001/eureka/,http://eureka2.com:7002/eureka/,http://eureka3.com:7003/eureka/
+  instance:
+    instance-id: pay-service
+    prefer-ip-address: true     #访问路径可以显示IP地址
+    status-page-url-path: /actuator/info
+
+info:
+  app.name: pay-app
+  company.name: http://jenkins.gggyvw.cn/view/%E9%9B%86%E7%BE%A4%E7%9B%91%E6%8E%A7-%E7%BA%BF%E4%B8%8A/
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

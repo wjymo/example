@@ -1,6 +1,5 @@
-package com.wjy.order.controller;
+package com.wjy.order4.controller;
 
-import com.netflix.discovery.converters.Auto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -31,5 +30,10 @@ public class OrderController {
             log.info("scheme:{},host:{},port:{},instanceId:{},metadata:{}",scheme,host,port,instanceId,metadata);
         }
         return discoveryClient;
+    }
+
+    @GetMapping("/testLoadBalanced")
+    public String testLoadBalanced(){
+        return "4";
     }
 }

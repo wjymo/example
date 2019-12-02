@@ -1,5 +1,6 @@
 package com.wjy.pay.service;
 
+import com.lly835.bestpay.enums.BestPayPlatformEnum;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import com.lly835.bestpay.model.PayRequest;
 import com.lly835.bestpay.model.PayResponse;
@@ -18,12 +19,31 @@ public class PayService {
 
     public PayResponse create(String orderId, BigDecimal amount, BestPayTypeEnum bestPayTypeEnum){
         PayRequest payRequest=new PayRequest();
-        payRequest.setOrderName("2795713-最好的支付sdk");
+        payRequest.setOrderName("2795713-胡尧的订单");
         payRequest.setOrderId(orderId);
         payRequest.setOrderAmount(amount.doubleValue());
         payRequest.setPayTypeEnum(bestPayTypeEnum);
         PayResponse response = bestPayService.pay(payRequest);
         log.info("response={}", response);
         return response;
+    }
+
+    public String asyncNotify(String notifyData) {
+        PayResponse payResponse = bestPayService.asyncNotify(notifyData);
+        log.info("payResponse:{}",payResponse);
+        //2. 金额校验（从数据库查订单）
+
+        //3. 修改订单支付状态
+
+        BestPayPlatformEnum payPlatformEnum = payResponse.getPayPlatformEnum();
+        if (payPlatformEnum==BestPayPlatformEnum.WX){
+            return "<xml>\n" +
+                    "  <return_code><![CDATA[SUCCESS]]></return_code>\n" +
+                    "  <return_msg><![CDATA[OK]]></return_msg>\n" +
+                    "</xml>";
+        }else if(payPlatformEnum ==BestPayPlatformEnum.ALIPAY){
+            return "success";
+        }
+        throw new RuntimeException("支付类型不对");
     }
 }

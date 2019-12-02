@@ -13,8 +13,12 @@
         <module>eureka-server2</module>
         <module>eureka-server3</module>
         <module>common</module>
-        <module>order</module>
+        <module>order1</module>
+        <module>order4</module>
+
         <module>pay</module>
+        <module>consumer</module>
+        <module>consumer-feign</module>
     </modules>
 
     <dependencyManagement>

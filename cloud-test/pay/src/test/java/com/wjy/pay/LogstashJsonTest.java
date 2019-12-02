@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class JsonTest {
+public class LogstashJsonTest {
 
 
 

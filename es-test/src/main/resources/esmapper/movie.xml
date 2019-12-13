@@ -1,0 +1,15 @@
+<properties>
+    <property name="getByTitle">
+        <![CDATA[
+        {
+          "query": {
+            "match": {
+              "title": "${title}"
+            }
+          }
+        }
+        ]]>
+    </property>
+
+
+</properties>

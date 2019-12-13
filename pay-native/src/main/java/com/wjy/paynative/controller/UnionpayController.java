@@ -22,6 +22,9 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+/**
+ * 银联支付
+ */
 @Slf4j
 @RestController
 @RequestMapping("/union")

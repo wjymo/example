@@ -1,0 +1,96 @@
+<properties>
+    <property name="getByCondition">
+        <![CDATA[
+        {
+        "_source": [
+            "houseId"
+          ],
+          "query": {
+            "bool": {
+              "filter": [
+                {
+                  "term":{
+                    "cityEnName": "$cityEnName"
+                  }
+                }
+                #if($regionEnName && !$regionEnName.equals("*"))
+                ,
+                {
+                  "term":{
+                    "regionEnName": #[regionEnName]
+                  }
+                }
+                #end
+                #if($areaInterval)
+                    ,{
+                       "range": {
+                        "area": {
+                        #if($areaInterval.max>0)
+                          "lte": $areaInterval.max
+                        #end
+                        #if($areaInterval.min>0)
+                          ,
+                          "gte":$areaInterval.min
+                        #end
+                        }
+                      }
+                    }
+                #end
+                #if($priceInterval)
+                    ,{
+                       "range": {
+                        "price": {
+                        #if($priceInterval.max>0)
+                          "lte": $priceInterval.max
+                        #end
+                        #if($priceInterval.min>0)
+                          ,
+                          "gte":$priceInterval.min
+                        #end
+                        }
+                      }
+                    }
+                #end
+                #if($direction>0)
+                    ,{
+                        "term":{
+                            "direction": $direction
+                      }
+                    }
+                #end
+                #if($rentWay>-1)
+                    ,{
+                        "term":{
+                            "rentWay": $rentWay
+                      }
+                    }
+                #end
+              ],
+              "must": [
+                {
+                  "multi_match": {
+                    "query": #[keywords],
+                    "fields": ["title^2","traffic","district","roundService","subwayLineName","subwayStationName","description"]
+                  }
+                }
+              ]
+            }
+          }
+        }
+        ]]>
+    </property>
+
+    <property name="getById">
+        <![CDATA[
+        {
+          "query": {
+            "term": {
+              "houseId": ${houseId}
+            }
+          }
+        }
+        ]]>
+    </property>
+
+
+</properties>

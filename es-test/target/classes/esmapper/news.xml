@@ -1,0 +1,19 @@
+<properties>
+    <property name="completionByTitle">
+        <![CDATA[
+        {
+          "suggest": {
+            "my-suggest": {
+              "prefix": "${prefix}",
+              "completion": {
+                "field": "title.suggest"
+              }
+            }
+          }
+        }
+        ]]>
+    </property>
+
+
+
+</properties>

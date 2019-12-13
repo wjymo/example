@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wjy.xunwu.dao.HouseDAO">
+	
+	<select id="findByCondition" resultType="com.wjy.xunwu.entity.House">
+		select * from house
+		<where>
+			status != ${@com.wjy.xunwu.constants.CommonConstant@DELETED}
+			<if test="searchBody.city != null and searchBody.city != ''">
+				and city_en_name = #{searchBody.city}
+			</if>
+			<if test="searchBody.status != null">
+				and status = #{searchBody.status}
+			</if>
+			<if test="searchBody.createTimeMin != null">
+				and create_time >= #{searchBody.createTimeMin}
+			</if>
+			<if test="searchBody.createTimeMax != null">
+				and create_time <![CDATA[<=]]> #{searchBody.createTimeMax}
+			</if>
+			<if test="searchBody.title != null and searchBody.title != ''">
+				and title like CONCAT('%',#{searchBody.title},'%')
+			</if>
+		</where>
+	</select>
+
+
+    <select id="findByConditionForApi" resultType="com.wjy.xunwu.entity.House">
+        select * from house
+        <where>
+            status = ${@com.wjy.xunwu.constants.CommonConstant@PASSES}
+            and city_en_name = #{rentSearch.cityEnName}
+            <if test='rentSearch.orderBy != null and
+            rentSearch.orderBy == @com.wjy.xunwu.util.HouseSort@DISTANCE_TO_SUBWAY_KEY'>
+                and distance_to_subway > -1
+            </if>
+        </where>
+    </select>
+
+	<select id="findAllInIds" parameterType="list" resultType="com.wjy.xunwu.entity.House">
+		select * from house where id in
+		<foreach collection="ids" item="id" separator="," open="(" close=")">
+			#{id}
+		</foreach>
+	</select>
+
+</mapper>

@@ -1,0 +1,75 @@
+<properties>
+    <property name="getByFaceScore">
+        <![CDATA[
+        {
+          "_source": [
+            "name",
+            "age",
+            "faceScore",
+            "job",
+            "address"
+          ],
+          "from": 0,
+          "size": 10000,
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "range": {
+                    "faceScore": {
+                      "gte": ${faceScore}
+                    }
+                  }
+                }
+              ],"should":[
+                {
+                    "match":{
+                        "job":"product"
+                    }
+                }
+              ]
+            }
+          }
+        }
+        ]]>
+    </property>
+
+
+    <property name="getByFaceScoreFunctionScore">
+        {
+        "query": {
+        "function_score": {
+        "query": {
+        "bool": {
+        "should": [
+        {
+        "match": {
+        "job": "${job}"
+        }
+        }
+        ],
+        "must": [
+        {
+        "range": {
+        "faceScore": {
+        "gte": ${faceScore}
+        }
+        }
+        }
+        ]
+        }
+        },
+        "functions": [
+        {
+        "field_value_factor": {
+        "field": "faceScore"
+        }
+        }
+        ],
+        "score_mode": "sum"
+        }
+        }
+        }
+    </property>
+
+</properties>

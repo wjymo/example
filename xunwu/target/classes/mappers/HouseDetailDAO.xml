@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wjy.xunwu.dao.HouseDetailDAO">
+	
+	<select id="findAllByHouseIdIn" resultType="com.wjy.xunwu.entity.HouseDetail">
+		select * from house_detail
+		<where>
+			house_id in
+			<foreach collection="houseIds" item="houseId" open="(" close=")" separator=",">
+				#{houseId}
+			</foreach>
+		</where>
+	</select>
+
+
+
+</mapper>

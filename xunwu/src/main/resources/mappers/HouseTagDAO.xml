@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wjy.xunwu.dao.HouseTagDAO">
+
+    <insert id="saveList" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT INTO house_tag
+        (house_id,`name`) values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.houseId},#{item.name})
+        </foreach>
+    </insert>
+
+    <select id="findAllByHouseIdIn" resultType="com.wjy.xunwu.entity.HouseTag">
+        select * from house_tag
+        <where>
+            house_id in
+            <foreach collection="houseIds" item="houseId" open="(" close=")" separator=",">
+                #{houseId}
+            </foreach>
+        </where>
+    </select>
+
+</mapper>

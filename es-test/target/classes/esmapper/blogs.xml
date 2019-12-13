@@ -1,0 +1,20 @@
+<properties>
+
+
+
+    <property name="termSuggestByTitle">
+        <![CDATA[
+        {
+          "suggest": {
+            "${suggestKey}": {
+              "text": "${text}",
+              "term": {
+                "suggest_mode": "missing",
+                "field": "body"
+              }
+            }
+          }
+        }
+        ]]>
+    </property>
+</properties>

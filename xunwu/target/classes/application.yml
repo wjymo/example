@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.168.1.108:33068/xunwu?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+
+  thymeleaf:
+    mode: HTML
+    suffix: .html
+    prefix: classpath:/templates/
+    cache: false
+
+  elasticsearch:
+    bboss:
+      #      elasticUser: elastic
+      #      elasticPassword: changeme
+      elasticsearch:
+        rest:
+          hostNames: 172.168.1.109:9200,172.168.1.108:9200,192.168.0.208:9200
+          ##hostNames: 172.168.1.109:9200,172.168.1.108:9200 ##集群地址配置
+        #        dateFormat: yyyy.MM.dd
+        #        timeZone: Asia/Shanghai
+        #        ttl: 2d
+        showTemplate: true
+
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  config-location: classpath:/mybatis-config.xml
+
+pagehelper:
+  helper-dialect: mysql
+#  reasonable: true
+#  support-methods-arguments: true
+#  params: count=countsql
+
+qiniu:
+  bucket: gengxunwu
+  accessKey: IE0IpcHHaNRdPjALceTw0j3CO8uH216NI8XZHYSi
+  secretKey: joK53J2FhtXn2U8-g9DE9BcZsrHi20FaiCr_RDB1
+  cdn: http://q284rxdj9.bkt.clouddn.com/

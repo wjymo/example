@@ -441,7 +441,7 @@
 
         $('#keyword-box').autocomplete({
             minLength: 2, // 最小字符数，默认1
-            delay: 300, // 延迟加载300ms
+            delay: 1000, // 延迟加载300ms
             source: function (request, response) { // 数据源
                 $.ajax({
                     url: '/rent/house/autocomplete?prefix=' + request.term,

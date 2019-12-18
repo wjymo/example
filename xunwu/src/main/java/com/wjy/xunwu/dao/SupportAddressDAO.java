@@ -11,7 +11,8 @@ public interface SupportAddressDAO {
     @Select("select * from support_address where level=#{level}")
     List<SupportAddress> findAllByLevel(@Param("level") String level);
 
-    @Select("select * from support_address where level=#{level} and belong_to=#{belongTo}")
+    @Select("select *,baidu_map_lng baiduMapLongitude,baidu_map_lat baiduMapLatitude" +
+            " from support_address where level=#{level} and belong_to=#{belongTo}")
     List<SupportAddress> findAllByLevelAndBelongTo(@Param("level") String level, @Param("belongTo") String cityName);
 
     @Select("select * from support_address where level=#{level} and en_name=#{cityEnName}")

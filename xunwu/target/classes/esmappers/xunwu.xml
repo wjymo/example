@@ -93,4 +93,120 @@
     </property>
 
 
+    <property name="completionByPrefix">
+        <![CDATA[
+        {
+          "_source": {
+            "includes": ["houseId"],
+            "excludes": ["suggest"]
+          },
+          "suggest": {
+            #[suggest-key]: {
+              "prefix":#[prefix],
+              "completion":{
+                "field":"suggest"
+              }
+            }
+          }
+        }
+        ]]>
+    </property>
+
+    <property name="aggByField">
+        <![CDATA[
+        {
+          "query": {
+            "bool": {
+              "filter": [
+                {
+                  "term":{
+                    "cityEnName": #[cityEnName]
+                  }
+                }
+              ]
+            }
+          },
+          "size": 0,
+          "aggs": {
+            "aggByFieldKey": {
+              "terms": {
+                "field": #[aggField]
+              }
+            }
+          }
+        }
+        ]]>
+    </property>
+
+
+    <property name="sortBy">
+        <![CDATA[
+        {
+          "_source": "houseId",
+          "from": $from,
+          "size": $size,
+          "query": {
+            "bool": {
+              "filter": [
+                {
+                  "term":{
+                    "cityEnName": #[cityEnName]
+                  }
+                }
+              ]
+            }
+          },
+          "sort": [
+            {
+              #[orderBy]: {
+                "order": #[direction]
+              }
+            }
+          ]
+        }
+        ]]>
+    </property>
+
+    <property name="getBylocation">
+        <![CDATA[
+        {
+            "_source": "houseId",
+            "from": $from,
+            "size": $size,
+            "query": {
+                "bool": {
+                  "filter": [
+                    {
+                      "term":{
+                        "cityEnName":#[cityEnName]
+                      }
+                    },
+                    {
+                      "geo_bounding_box":{
+                          "location":{
+                             "top_left" : {
+                                  "lat" : $leftLatitude,
+                                  "lon" : $leftLongitude
+                              },
+                              "bottom_right" : {
+                                  "lat" : $rightLatitude,
+                                  "lon" : $rightLongitude
+                              }
+                          }
+                      }
+                    }
+                  ]
+                }
+            },
+            "sort": [
+            {
+              #[orderBy]: {
+                "order": #[direction]
+              }
+            }
+          ]
+        }
+        ]]>
+    </property>
+
 </properties>

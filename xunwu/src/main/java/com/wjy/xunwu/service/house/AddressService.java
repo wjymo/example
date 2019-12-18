@@ -1,5 +1,7 @@
 package com.wjy.xunwu.service.house;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wjy.xunwu.dao.SubwayDAO;
 import com.wjy.xunwu.dao.SubwayStationDAO;
 import com.wjy.xunwu.dao.SupportAddressDAO;
@@ -9,11 +11,22 @@ import com.wjy.xunwu.dto.SupportAddressDTO;
 import com.wjy.xunwu.entity.Subway;
 import com.wjy.xunwu.entity.SubwayStation;
 import com.wjy.xunwu.entity.SupportAddress;
+import com.wjy.xunwu.es.BaiduMapLocation;
 import com.wjy.xunwu.response.ServiceResult;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,6 +34,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 public class AddressService {
     @Autowired
     private SupportAddressDAO supportAddressDAO;
@@ -45,7 +59,8 @@ public class AddressService {
         }
         List<SupportAddress> regions = supportAddressDAO.findAllByLevelAndBelongTo(SupportAddress.Level.REGION
                 .getValue(), cityName);
-        List<SupportAddressDTO> result = regions.stream().map(supportAddress -> modelMapper.map(supportAddress, SupportAddressDTO.class))
+        List<SupportAddressDTO> result = regions.stream().map(supportAddress ->
+                modelMapper.map(supportAddress, SupportAddressDTO.class))
                 .collect(Collectors.toList());
         return result;
     }
@@ -116,6 +131,54 @@ public class AddressService {
 
         SupportAddressDTO addressDTO = modelMapper.map(supportAddress, SupportAddressDTO.class);
         return ServiceResult.of(addressDTO);
+    }
+
+    private static final String BAIDU_MAP_GEOCONV_API = "http://api.map.baidu.com/geocoding/v3/?";
+    private static final String BAIDU_MAP_KEY = "d5jH26Fww5L8bTj8zXHztujdF21s7C6T";
+    @Autowired
+    private ObjectMapper objectMapper;
+    public ServiceResult<BaiduMapLocation> getBaiduMapLocation(String city, String address) {
+        String encodeAddress;
+        String encodeCity;
+
+        try {
+            encodeAddress = URLEncoder.encode(address, "UTF-8");
+            encodeCity = URLEncoder.encode(city, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            log.error("Error to encode house address", e);
+            return new ServiceResult<BaiduMapLocation>(false, "Error to encode hosue address");
+        }
+
+        HttpClient httpClient = HttpClients.createDefault();
+        StringBuilder sb = new StringBuilder(BAIDU_MAP_GEOCONV_API);
+        sb.append("address=").append(encodeAddress).append("&")
+                .append("city=").append(encodeCity).append("&")
+                .append("output=json&")
+                .append("ak=").append(BAIDU_MAP_KEY);
+//
+        HttpGet get = new HttpGet(sb.toString());
+        try {
+            HttpResponse response = httpClient.execute(get);
+            if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
+                return new ServiceResult<BaiduMapLocation>(false, "Can not get baidu map location");
+            }
+            String result = EntityUtils.toString(response.getEntity(), "UTF-8");
+            JsonNode jsonNode = objectMapper.readTree(result);
+            int status = jsonNode.get("status").asInt();
+            if (status != 0) {
+                return new ServiceResult<BaiduMapLocation>(false, "Error to get map location for status: " + status);
+            } {
+                BaiduMapLocation location = new BaiduMapLocation();
+                JsonNode jsonLocation = jsonNode.get("result").get("location");
+                location.setLongitude(jsonLocation.get("lng").asDouble());
+                location.setLatitude(jsonLocation.get("lat").asDouble());
+                return ServiceResult.of(location);
+            }
+
+        } catch (IOException e) {
+            log.error("Error to fetch baidumap api", e);
+            return new ServiceResult<BaiduMapLocation>(false, "Error to fetch baidumap api");
+        }
     }
 
 }

@@ -10,10 +10,7 @@ import com.wjy.xunwu.dto.HouseDetailDTO;
 import com.wjy.xunwu.dto.HousePictureDTO;
 import com.wjy.xunwu.entity.*;
 import com.wjy.xunwu.exception.XunwuException;
-import com.wjy.xunwu.form.DatatableSearch;
-import com.wjy.xunwu.form.HouseForm;
-import com.wjy.xunwu.form.PhotoForm;
-import com.wjy.xunwu.form.RentSearch;
+import com.wjy.xunwu.form.*;
 import com.wjy.xunwu.response.ResultCode;
 import com.wjy.xunwu.response.ServiceMultiResult;
 import com.wjy.xunwu.response.ServiceResult;
@@ -419,5 +416,26 @@ public class HouseService {
             HouseDTO house = idToHouseMap.get(houseTag.getHouseId());
             house.getTags().add(houseTag.getName());
         });
+    }
+
+    public ServiceMultiResult<HouseDTO> wholeMapQuery(MapSearch mapSearch) {
+        ServiceMultiResult<Long> serviceResult = searchService.mapQuery(mapSearch.getCityEnName(),
+                mapSearch.getOrderBy(), mapSearch.getOrderDirection(), mapSearch.getStart(), mapSearch.getSize());
+
+        if (serviceResult.getTotal() == 0) {
+            return new ServiceMultiResult<>(0, new ArrayList<>());
+        }
+        List<HouseDTO> houses = wrapperHouseResult(serviceResult.getResult());
+        return new ServiceMultiResult<>(serviceResult.getTotal(), houses);
+    }
+
+    public ServiceMultiResult<HouseDTO> boundMapQuery(MapSearch mapSearch) {
+        ServiceMultiResult<Long> serviceResult = searchService.mapQuery(mapSearch);
+        if (serviceResult.getTotal() == 0) {
+            return new ServiceMultiResult<>(0, new ArrayList<>());
+        }
+
+        List<HouseDTO> houses = wrapperHouseResult(serviceResult.getResult());
+        return new ServiceMultiResult<>(serviceResult.getTotal(), houses);
     }
 }

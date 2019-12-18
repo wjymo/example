@@ -36,7 +36,7 @@ public interface HouseDetailDAO {
     void save(@Param("detail") HouseDetail detail);
 
 
-    @Select("select * from house_detail where house_id=#{houseId} ")
+    @Select("select *,address detailAddress from house_detail where house_id=#{houseId} ")
     HouseDetail findByHouseId(@Param("houseId") Long id);
 
 

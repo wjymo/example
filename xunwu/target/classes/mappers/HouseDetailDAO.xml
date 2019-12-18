@@ -3,7 +3,7 @@
 <mapper namespace="com.wjy.xunwu.dao.HouseDetailDAO">
 	
 	<select id="findAllByHouseIdIn" resultType="com.wjy.xunwu.entity.HouseDetail">
-		select * from house_detail
+		select *,address detailAddress from house_detail
 		<where>
 			house_id in
 			<foreach collection="houseIds" item="houseId" open="(" close=")" separator=",">

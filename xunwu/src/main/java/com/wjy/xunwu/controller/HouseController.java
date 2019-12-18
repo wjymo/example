@@ -3,6 +3,8 @@ package com.wjy.xunwu.controller;
 import com.wjy.xunwu.constants.RentValueBlock;
 import com.wjy.xunwu.dto.*;
 import com.wjy.xunwu.entity.SupportAddress;
+import com.wjy.xunwu.es.HouseBucketDTO;
+import com.wjy.xunwu.form.MapSearch;
 import com.wjy.xunwu.form.RentSearch;
 import com.wjy.xunwu.response.ApiResponse;
 import com.wjy.xunwu.response.ServiceMultiResult;
@@ -12,6 +14,7 @@ import com.wjy.xunwu.service.house.HouseService;
 import com.wjy.xunwu.service.search.SearchService;
 import com.wjy.xunwu.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -188,5 +191,51 @@ public class HouseController {
         }
         ServiceResult<List<String>> result = searchService.suggest(prefix);
         return ApiResponse.ofSuccess(result.getResult());
+    }
+
+    @GetMapping("rent/house/map")
+    public String rentMapPage(@RequestParam(value = "cityEnName") String cityEnName,
+                              Model model,
+                              HttpSession session,
+                              RedirectAttributes redirectAttributes) {
+        ServiceResult<SupportAddressDTO> city = addressService.findCity(cityEnName);
+        if (!city.isSuccess()) {
+            redirectAttributes.addAttribute("msg", "must_chose_city");
+            return "redirect:/index";
+        } else {
+            session.setAttribute("cityName", cityEnName);
+            model.addAttribute("city", city.getResult());
+        }
+
+        List<SupportAddressDTO> regions = addressService.findAllRegionsByCityName(cityEnName);
+
+
+        ServiceMultiResult<HouseBucketDTO> serviceResult = searchService.mapAggregate(cityEnName);
+
+        model.addAttribute("aggData", serviceResult.getResult());
+        model.addAttribute("total", serviceResult.getTotal());
+        model.addAttribute("regions", regions);
+        return "rent-map";
+    }
+
+
+    @GetMapping("rent/house/map/houses")
+    @ResponseBody
+    public ApiResponse rentMapHouses(@ModelAttribute MapSearch mapSearch) {
+        if (mapSearch.getCityEnName() == null) {
+            return ApiResponse.ofMessage(HttpStatus.BAD_REQUEST.value(), "必须选择城市");
+        }
+        ServiceMultiResult<HouseDTO> serviceMultiResult=null;
+        if (mapSearch.getLevel() < 13) {
+            serviceMultiResult = houseService.wholeMapQuery(mapSearch);
+        } else {
+            // 小地图查询必须要传递地图边界参数
+            serviceMultiResult = houseService.boundMapQuery(mapSearch);
+        }
+
+        ApiResponse response = ApiResponse.ofSuccess(serviceMultiResult.getResult());
+        response.setMore(serviceMultiResult.getTotal() > (mapSearch.getStart() + mapSearch.getSize()));
+        return response;
+
     }
 }

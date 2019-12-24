@@ -1,0 +1,15 @@
+
+jwt:
+  sign: huyao
+
+
+server:
+  port: 8081
+
+
+
+spring:
+  redis:
+    host: 172.168.1.108
+    port: 6379
+    password: gggyvw

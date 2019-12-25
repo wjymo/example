@@ -1,5 +1,6 @@
 package com.wjy.xunwu.service.house;
 
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.google.common.collect.Maps;
@@ -9,6 +10,7 @@ import com.wjy.xunwu.dto.HouseDTO;
 import com.wjy.xunwu.dto.HouseDetailDTO;
 import com.wjy.xunwu.dto.HousePictureDTO;
 import com.wjy.xunwu.entity.*;
+import com.wjy.xunwu.es.HouseIndexMessage;
 import com.wjy.xunwu.exception.XunwuException;
 import com.wjy.xunwu.form.*;
 import com.wjy.xunwu.response.ResultCode;
@@ -17,15 +19,20 @@ import com.wjy.xunwu.response.ServiceResult;
 import com.wjy.xunwu.service.search.SearchService;
 import com.wjy.xunwu.util.HouseSort;
 import com.wjy.xunwu.util.Tool;
+import lombok.extern.log4j.Log4j2;
 import org.apache.commons.lang3.StringUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Log4j2
 @Service
 public class HouseService {
     @Autowired
@@ -204,6 +211,33 @@ public class HouseService {
     }
 
 
+    private static final String INDEX_TOPIC = "xunwu";
+
+    @Autowired
+    private KafkaTemplate<String, String> kafkaTemplate;
+
+    @KafkaListener(topics = INDEX_TOPIC)
+    private void handleMessage(String content) {
+        try {
+            HouseIndexMessage message = JSON.parseObject(content,HouseIndexMessage.class);
+            switch (message.getOperation()) {
+                case HouseIndexMessage.INDEX:
+//                    createOrUpdateIndex(message);
+                    searchService.index(message.getHouseId());
+                    break;
+                case HouseIndexMessage.REMOVE:
+//                    removeIndex(message);
+                    searchService.remove(message.getHouseId());
+                    break;
+                default:
+                    log.warn("Not support message content " + content);
+                    break;
+            }
+        } catch (Exception e) {
+            log.error("Cannot parse json for " + content, e);
+        }
+    }
+
     public ServiceResult updateStatus(Long id, int status) {
         House house = houseDAO.findOne(id);
         if (house == null) {
@@ -224,11 +258,16 @@ public class HouseService {
 
         houseDAO.updateStatus(id, status);
 
+        HouseIndexMessage houseIndexMessage=new HouseIndexMessage(id);
         // 上架更新索引 其他情况都要删除索引
         if (status == HouseStatus.PASSES.getValue()) {
-            searchService.index(id);
+//            searchService.index(id);
+            houseIndexMessage.setOperation(HouseIndexMessage.INDEX);
+            kafkaTemplate.send(INDEX_TOPIC, JSON.toJSONString(houseIndexMessage));
         } else {
-            searchService.remove(id);
+//            searchService.remove(id);
+            houseIndexMessage.setOperation(HouseIndexMessage.REMOVE);
+            kafkaTemplate.send(INDEX_TOPIC, JSON.toJSONString(houseIndexMessage));
         }
         return ServiceResult.success();
     }

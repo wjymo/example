@@ -5,6 +5,13 @@ spring:
     username: root
     password: 123456
 
+  kafka:
+    bootstrap-servers:
+      - 172.168.1.109:9092
+      - 172.168.1.108:9092
+    consumer:
+      group-id: wjygroup
+
   thymeleaf:
     mode: HTML
     suffix: .html
@@ -39,3 +46,5 @@ qiniu:
   accessKey: IE0IpcHHaNRdPjALceTw0j3CO8uH216NI8XZHYSi
   secretKey: joK53J2FhtXn2U8-g9DE9BcZsrHi20FaiCr_RDB1
   cdn: http://q284rxdj9.bkt.clouddn.com/
+server:
+  port: 8082

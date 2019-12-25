@@ -63,6 +63,7 @@ public class SearchService {
     private AddressService addressService;
 
 
+
     public void index(Long houseId) {
         House house = houseDAO.findOne(houseId);
         HouseIndexTemplate houseIndexTemplate = new HouseIndexTemplate();

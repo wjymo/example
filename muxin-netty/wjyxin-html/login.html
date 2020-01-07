@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>表单登录</h2>
+		<form id="image_login" action="http://192.168.0.110:8081/user/login" method="post">
+			<table>
+				<tr>
+					<td>用户名:</td> 
+					<td><input id="image_username" type="text" name="username" value="xiaoer"></td>
+				</tr>
+				<tr>
+					<td>密码:</td>
+					<td><input id="image_password" type="password" name="password" value="111"></td>
+				</tr>
+				<!-- <tr>
+					<td><img src="http://192.168.0.110:8081/code/image"/></td>
+					<td>请输入验证码：</td>
+					<td><input id="image_code" type="text" name="image_code"></td>
+				</tr> -->
+				<tr>
+					<td><img id="image"/></td>
+					<td>请输入验证码：</td>
+					<td><input id="image_code" type="text" name="image_code"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button id="image_login_btn" type="button" name="type">登录</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+		
+		<h2>短信登录</h2>
+		<form id="sms_login" action="http://192.168.0.110:8081/sms/login" method="post">
+			<table>
+				<tr>
+					<td>手机号:</td>
+					<td><input type="text" id="mobile" name="mobile" value="13012345678"></td>
+				</tr>
+				<tr>
+					<td>短信验证码:</td>
+					<td>
+						<input type="text" id="sms_code" name="smsCode">
+						<input id="send_sms" type="button" value="发送验证码"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="sms_login_btn" type="button">登录</button></td>
+				</tr>
+			</table>
+		</form>
+		
+		<!-- <div id="incubator" style="background-color: #007AFF;color: #FF0000;width: 130px;cursor: pointer;">测试培养箱</div> -->
+		<hr />
+		<a href="regist.html">注册</a>
+		<hr />
+		<a href="discover.html">搜好友</a>
+		<hr />
+		<a href="me.html">我的页面</a>
+		<hr />
+		<a href="contacts.html" target="_blank">通讯录</a>
+		<hr />
+		<a href="cover.html" target="_blank">首页列表</a>
+		
+		<script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+			$(function () {
+				app.initImage();
+				
+			    $('#image_login_btn').on('click',function(){
+					var username=$('#image_username').val();
+					var password=$('#image_password').val();
+					var imageCode=$('#image_code').val();
+					var imageCodeKey=localStorage.getItem("imageCodeKey");
+					app.imageLogin(username,password,imageCode,imageCodeKey);
+				});
+				
+				$('#send_sms').on('click',function(){
+					app.sendSmsCode();
+				});
+				
+				$('#sms_login_btn').on('click',function(){
+					var mobile=$('#mobile').val();
+					var smsCode=$('#sms_code').val();
+					var smsCodeKey=localStorage.getItem("smsCodeKey");
+					app.smsLogin(mobile,smsCode,smsCodeKey);
+				});
+				
+				// var data=[{"day":13,"incubatorName":"培养箱1-5号位","weekDay":"周五"},{"day":14,"incubatorName":"培养箱1-5号位","weekDay":"周六"},{"day":15,"incubatorName":"培养箱1-5号位","weekDay":"周日"}];
+				// $('#incubator').on('click',function(){
+				// 	console.log('huyaobn')
+				// 	$.ajax({
+				// 		type:"post",
+				// 		contentType:"application/json",
+				// 		// crossDomain: true,
+				// 		dataType: "json",//预期服务器返回的数据类型
+				// 		data:JSON.stringify(data),
+				// 		url:"http://192.168.0.110:8080/incubator/appointment?month=12&year=2019",
+				// 		success: function (result) {
+				// 			alert(JSON.stringify(result));
+				// 		}
+				// 	});
+				// });
+				
+			});
+		</script>
+	</body>
+</html>

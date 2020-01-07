@@ -27,14 +27,23 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
         Algorithm algorithm = Algorithm.HMAC256(tokenSign);
         String username = authentication.getName();
         Object principal = authentication.getPrincipal();
+        String id=null;
+        String img=null;
+        if(principal instanceof SecurityUser){
+            SecurityUser securityUser = (SecurityUser) principal;
+            id=securityUser.getId();
+            img=securityUser.getImg();
+        }
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.MONTH, 1);
+        calendar.add(Calendar.MONTH, 2);
         String token = JWT.create().withClaim("username", username)
                 .withClaim("authorities", Joiner.on(",").join(authentication.getAuthorities().toArray()))
                 .withExpiresAt(calendar.getTime()).sign(algorithm);
 
         Map<String, Object> map = Maps.newHashMap();
         map.put("token", token);
+        map.put("id", id);
+        map.put("img", img);
         map.put("username", authentication.getName());
 
         response.setCharacterEncoding("utf-8");

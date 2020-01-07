@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a551a20-b8eb-48ca-8f26-249c748e2406" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../muxin-netty/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../muxin-netty/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/xunwu/service/house/HouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/xunwu/service/house/HouseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/xunwu/service/search/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/xunwu/service/search/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="7a551a20-b8eb-48ca-8f26-249c748e2406" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +28,7 @@
     <session id="15672622">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
@@ -128,8 +122,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/esmappers/xunwu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+            <state relative-caret-position="52">
+              <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -559,7 +553,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577257218379" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577258352560" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -714,7 +708,7 @@
       <workItem from="1575613079488" duration="45368000" />
       <workItem from="1576053996883" duration="19819000" />
       <workItem from="1576460423710" duration="30132000" />
-      <workItem from="1577176968106" duration="6661000" />
+      <workItem from="1577176968106" duration="6732000" />
     </task>
     <servers />
   </component>
@@ -751,14 +745,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101980000" />
+    <option name="totallyTimeSpent" value="102051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.35380507" visible="true" weight="0.18283582" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.64619493" side_tool="true" visible="true" weight="0.18283582" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3546638" visible="true" weight="0.18283582" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.6453362" side_tool="true" visible="true" weight="0.18283582" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -768,7 +762,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.15509762" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.21149674" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.18763557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.18763557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1303,8 +1297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/esmappers/xunwu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        <state relative-caret-position="52">
+          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
         </state>
       </provider>
     </entry>

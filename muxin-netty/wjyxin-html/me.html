@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="me">
+			我是:<span style="cursor:pointer;color: crimson; font-size: 24px;" id="my_username"></span>
+		</div>
+		<div>以下是想肛我的人：</div>
+		<ul id="user_list_ul">
+			
+		</ul>
+		
+		<hr />
+		<a href="contacts.html">通讯录</a>
+		<script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+			function init(){
+				var myUsername=app.getUsername();
+				$('#my_username').html(myUsername);
+				var myId=app.getId();
+				var token=app.getToken();
+				$.ajax({
+					type:"get",
+					url:app.baseUrl+"/user/all/request/"+myId,
+					headers: {
+						'Authorization':token
+					},
+					success:function(result){
+						console.log(JSON.stringify(result.result));
+						var userList=result.result;
+						if(userList != null&&userList != undefined &&userList.length>0){
+							for(var i=0;i<userList.length;i++){
+								var user=userList[i];
+								var liHtml='<li>'+
+												'<span>头像:</span><img style="height:120px;weight:120px;" src="img/'+user.faceImage+'"/>'+
+												'<tr></tr>'+
+												'<hr />'+
+												'<span>昵称：</span><span>'+user.nickname+'</span>'+
+												'<tr></tr>'+
+											'</li><input type="button" class="cancel" style="cursor:pointer;" data-id="'+user.id+'" value="取消"/>'+
+											'<input style="cursor:pointer;" class="pass" type="button" data-id="'+user.id+'" value="通过"/><br/><br/><br/>';
+								$('#user_list_ul').append(liHtml);
+							}
+						}
+					}
+				})
+			}
+			$(function(){
+				init();
+				$('#user_list_ul').on('click','.cancel',function(){
+					var requestId=$(this).data('id');
+					var myId=app.getId();
+					var token=app.getToken();
+					var data={
+						sendUserId:requestId,
+						acceptUserId:myId
+					};
+					$.ajax({
+						type:"post",
+						url:app.baseUrl+"/user/canael/request",
+						headers: {
+							'Authorization':token,
+							'Content-Type':'application/json'
+						},
+						data:JSON.stringify(data),
+						success:function(result){
+							alert('取消成功');
+						}
+					});
+				});
+				$('#user_list_ul').on('click','.pass',function(){
+					var requestId=$(this).data('id');
+					var myId=app.getId();
+					var token=app.getToken();
+					var data={
+						sendUserId:requestId,
+						acceptUserId:myId
+					};
+					$.ajax({
+						type:"post",
+						url:app.baseUrl+"/user/pass/request",
+						headers: {
+							'Authorization':token,
+							'Content-Type':'application/json'
+						},	
+						data:JSON.stringify(data),
+						success:function(result){
+							alert('通过成功');
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

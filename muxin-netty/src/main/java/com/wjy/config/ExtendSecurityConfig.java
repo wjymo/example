@@ -24,7 +24,7 @@ public class ExtendSecurityConfig extends SecurityConfigurerAdapter<DefaultSecur
     @Autowired
     private UserService userService;
     @Override
-    public void configure(HttpSecurity http) throws Exception {
+    public void configure(HttpSecurity http){
         SmsCodeAuthenticationFilter smsCodeAuthenticationFilter=new SmsCodeAuthenticationFilter();
         smsCodeAuthenticationFilter.setAuthenticationManager(http.getSharedObject(AuthenticationManager.class));
         smsCodeAuthenticationFilter.setAuthenticationSuccessHandler(authenticationSuccessHandler);

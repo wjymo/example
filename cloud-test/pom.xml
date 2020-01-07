@@ -20,6 +20,7 @@
         <module>consumer</module>
         <module>consumer-feign</module>
         <module>order1-hystrix</module>
+        <module>zuul</module>
     </modules>
 
     <properties>

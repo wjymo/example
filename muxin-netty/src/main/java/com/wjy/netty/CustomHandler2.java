@@ -40,6 +40,8 @@ public class CustomHandler2 extends SimpleChannelInboundHandler<TextWebSocketFra
 	@Override
 	public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
 		channels.add(ctx.channel());
+		log.info("有客户端连接，channle对应的长id为：" + ctx.channel().id().asLongText());
+		log.info("当前channels长度："+channels.size());
 	}
 
 	@Override

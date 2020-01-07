@@ -41,7 +41,7 @@ public class OrderController {
     }
 
     @GetMapping("/map/{id}")
-//    @HystrixCommand(fallbackMethod = "processHystrix_Get")
+    @HystrixCommand(fallbackMethod = "processHystrix_Get")
     public Map<String,String> getMap(@PathVariable("id") String id){
         Map<String,String> map=new HashMap<>();
         if(1==1){

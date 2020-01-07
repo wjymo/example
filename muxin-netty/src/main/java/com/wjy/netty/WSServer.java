@@ -48,7 +48,8 @@ public class WSServer {
                         pipeline.addLast(new HttpObjectAggregator(1024*64));
                         pipeline.addLast(new WebSocketServerProtocolHandler("/ws"));
                         // 添加自定义的助手类，返回 "hello netty~"
-                        pipeline.addLast("customHandler", new CustomHandler2());
+//                        pipeline.addLast("customHandler", new CustomHandler2());
+                        pipeline.addLast("chatHandler", new ChatHandler());
                     }
                 })
         ;

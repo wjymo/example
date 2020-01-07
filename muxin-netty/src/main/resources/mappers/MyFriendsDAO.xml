@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wjy.dao.MyFriendsDAO">
+
+
+    <insert id="insertList" parameterType="list">
+        insert into my_friends (`id`,`my_user_id`,`my_friend_user_id`) values
+        <foreach collection="list" item="myFriend" separator="),(" open="(" close=")">
+            #{myFriend.id},#{myFriend.myUserId},#{myFriend.myFriendUserId}
+        </foreach>
+    </insert>
+
+
+</mapper>

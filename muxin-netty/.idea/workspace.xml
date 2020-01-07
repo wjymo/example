@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7bb3f6d-20de-402b-b9b6-668a0bb2d6da" name="Default Changelist" comment="" />
+    <list default="true" id="f7bb3f6d-20de-402b-b9b6-668a0bb2d6da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../authorization-server/src/main/java/com/wjy/config/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authorization-server/src/main/java/com/wjy/config/AuthorizationServerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../authorization-server/src/main/java/com/wjy/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../authorization-server/src/main/java/com/wjy/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud-test/order1-hystrix/src/main/java/com/wjy/order1hystrix/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cloud-test/order1-hystrix/src/main/java/com/wjy/order1hystrix/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cloud-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cloud-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/MuxinNettyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/MuxinNettyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/config/ExtendSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/config/ExtendSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/netty/CustomHandler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/netty/CustomHandler2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/netty/WSServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/netty/WSServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/security/UserDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/security/UserDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/MuxinNettyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/MuxinNettyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/config/ExtendSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/config/ExtendSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/netty/CustomHandler2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/netty/CustomHandler2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/netty/WSServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/netty/WSServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/netty/WSServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/netty/WSServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/security/MyAuthenticationSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/security/MyAuthenticationSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/security/UserDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/security/UserDetailServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjy/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjy/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xunwu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,168 +41,100 @@
     <session id="148379184">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.1" value="7" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.824" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="java" value="2177" />
+          <entry key="java" value="7573" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="21" />
-          <entry key="yml" value="21" />
+          <entry key="txt" value="58" />
+          <entry key="xml" value="97" />
+          <entry key="yml" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2177" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="JAVA" value="7573" />
+          <entry key="PLAIN_TEXT" value="68" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="21" />
-          <entry key="YAML" value="21" />
+          <entry key="XML" value="97" />
+          <entry key="YAML" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="110" />
-          <entry key="pom" value="1" />
-          <entry key="sql" value="1" />
-          <entry key="xml" value="2" />
-          <entry key="yml" value="4" />
+          <entry key="html" value="1" />
+          <entry key="java" value="231" />
+          <entry key="js" value="1" />
+          <entry key="pom" value="2" />
+          <entry key="sql" value="3" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="7" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="110" />
-          <entry key="SQL" value="1" />
-          <entry key="XML" value="3" />
-          <entry key="YAML" value="4" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="231" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="SQL" value="3" />
+          <entry key="XML" value="9" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="37" column="29" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/config/ExtendSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/filter/CrossFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/SmsCodeAuthenticationProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="23" column="60" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/SmsCodeAuthenticationToken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-              <folding>
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationSuccessHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/security/Principal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationFailureHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="85" lean-forward="true" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/filter/SmsCodeAuthenticationFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
-                <element signature="e#1232#1233#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.3178251">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/readme.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="234">
+                  <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="284">
+                  <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/readme.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="286">
+                  <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -191,6 +150,9 @@
       <find>Access-Control-Allow-Origin</find>
       <find>sharedObjects</find>
       <find>createSharedObjects</find>
+      <find>clazz</find>
+      <find>parseObject</find>
+      <find>users</find>
     </findStrings>
     <replaceStrings>
       <replace>log.info</replace>
@@ -202,40 +164,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/idworker/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/MuxinNettyApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/CustomHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/NettyBooter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/HelloServerInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/WSServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/CustomHandler2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/response/ResultCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/exception/AppointmentException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/exception/NettyException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/exception/NettyExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/UserDetailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/TokenAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/validate/code/ValidateCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/validate/code/ImageCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/exception/ValidateCodeException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationFailureHandler.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/filter/CrossFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/SmsCodeAuthenticationToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/filter/SmsCodeAuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/config/ExtendWebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/controller/ValidateCodeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/constant/CommonConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/filter/ValidateCodeFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/muxin-dev.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wjy/config/ExtendSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/SmsCodeAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/niochat/GroupServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/niochat/GroupClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/util/BeanValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/MuxinNettyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/util/QRCodeUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/util/SpringContextHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/TokenAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/entity/FriendsRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/UserDetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/SecurityUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/dao/FriendsRequestDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/service/FriendsRequestService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/MyFriendsDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/entity/MyFriends.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/service/MyFriendsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/dao/MyFriendsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/entity/User.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/util/ChineseCharacterUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/config/ExtendSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/publicinterface/HelloService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/provider/HelloServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/provider/MyServerBootstarp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/provider/NettyServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/custom/ClientBootstrap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/custom/NettyClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/custom/NettyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dubborpc/provider/NettyServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/CustomHandler2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/util/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/UserChannelRel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/DataContent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/constant/MsgActionEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/WSServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/entity/DBChatMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/constant/MsgSignFlagEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/ChatMsgDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/entity/ChatMsgUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/dao/ChatMsgDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wjy/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/muxin-dev.sql" />
+        <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
   </component>
@@ -271,8 +250,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="136" />
-    <option name="y" value="345" />
+    <option name="x" value="204" />
+    <option name="y" value="128" />
     <option name="width" value="1558" />
     <option name="height" value="770" />
   </component>
@@ -313,7 +292,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,93 +318,12 @@
               <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wjy" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="muxin-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muxin-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,24 +333,26 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577176947024" />
-    <property name="last_opened_file_path" value="D:/workspace3/security-old/security" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578384417165" />
+    <property name="last_opened_file_path" value="D:/workspace3/chatroom-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wjy.security" />
-      <recent name="com.wjy.security.filter" />
-      <recent name="com.wjy.exception" />
-      <recent name="com.wjy.validate.code" />
-      <recent name="com.wjy.config" />
+      <recent name="com.wjy.constant" />
+      <recent name="com.wjy.entity" />
+      <recent name="com.wjy.util" />
+      <recent name="com.wjy.netty" />
+      <recent name="com.wjy.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace2\example\muxin-netty\src\main\resources\db" />
+      <recent name="D:\workspace2\example\muxin-netty" />
+      <recent name="D:\workspace2\example\muxin-netty\src\main\resources\mappers" />
+      <recent name="D:\workspace2\example\muxin-netty\src\main\java\com\wjy\netty" />
       <recent name="D:\workspace2\example\muxin-netty\src\main\resources" />
-      <recent name="D:\workspace2\example\muxin-netty\src\main\java\com\wjy" />
-      <recent name="D:\workspace2\example\muxin-netty\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,7 +367,72 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.MuxinNettyApplication">
+    <configuration name="ClientBootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dubborpc.custom.ClientBootstrap" />
+      <module name="muxin-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dubborpc.custom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wjy.util.FileUtils" />
+      <module name="muxin-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wjy.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wjy.niochat.GroupClient" />
+      <module name="muxin-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wjy.niochat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyServerBootstarp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dubborpc.provider.MyServerBootstarp" />
+      <module name="muxin-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dubborpc.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDetailServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wjy.security.UserDetailServiceImpl" />
+      <module name="muxin-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wjy.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MuxinNettyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="muxin-netty" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wjy.MuxinNettyApplication" />
@@ -473,6 +440,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MuxinNettyApplication" />
+      <item itemvalue="Application.GroupClient" />
+      <item itemvalue="Application.UserDetailServiceImpl" />
+      <item itemvalue="Application.MyServerBootstarp" />
+      <item itemvalue="Application.ClientBootstrap" />
+      <item itemvalue="Application.FileUtils" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FileUtils" />
+        <item itemvalue="Application.ClientBootstrap" />
+        <item itemvalue="Application.MyServerBootstarp" />
+        <item itemvalue="Application.UserDetailServiceImpl" />
+        <item itemvalue="Application.GroupClient" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -487,17 +471,24 @@
       <workItem from="1576574495151" duration="4747000" />
       <workItem from="1576721054792" duration="22077000" />
       <workItem from="1577086649420" duration="8334000" />
+      <workItem from="1577344555949" duration="8954000" />
+      <workItem from="1577429257959" duration="430000" />
+      <workItem from="1577757810491" duration="16410000" />
+      <workItem from="1577929889828" duration="4417000" />
+      <workItem from="1577948390826" duration="5772000" />
+      <workItem from="1578018367091" duration="4013000" />
+      <workItem from="1578275840564" duration="15152000" />
+      <workItem from="1578362923219" duration="5460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35158000" />
+    <option name="totallyTimeSpent" value="95766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23294243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -507,8 +498,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.14533623" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20498915" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.12581345" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -516,7 +507,7 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -525,7 +516,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.08315565" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.04904051" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -553,6 +544,42 @@
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dubborpc/provider/NettyServerHandler.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wjy/util/FileUtils.java</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatHandler.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatHandler.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatHandler.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -562,460 +589,425 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>UserChannelRel.</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>file.getAbsolutePath()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>file.getPath()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.clazz</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.methodAccessor</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getParameterCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((Proxy) proxy).h</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>authentication.getName()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>http
-				.getSharedObject(AuthenticationManager.class)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.getAuthenticationManager();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.getAuthenticationManager()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getParameter(CommonConstant.SUBMIT_SMS_CODE_IN_SESSION_KEY)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getParameterMap()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>res.getHeaderNames()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new String(base64)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getRequestURI()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/WSServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/dao/MyFriendsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/exception/ValidateCodeException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE-sources.jar!/org/springframework/web/filter/GenericFilterBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/WebSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="157" column="36" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
-          <folding>
-            <element signature="e#6599#6600#0" expanded="true" />
-            <element signature="e#6635#6636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/response/ResultCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/response/CommonResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/response/ResponseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/validate/code/ImageCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="1565" column="49" selection-start-line="1565" selection-start-column="49" selection-end-line="1565" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE-sources.jar!/org/springframework/http/MediaType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="245" column="61" selection-start-line="245" selection-start-column="57" selection-end-line="245" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.13/commons-codec-1.13-sources.jar!/org/apache/commons/codec/binary/Base64.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="556" column="5" lean-forward="true" selection-start-line="556" selection-start-column="5" selection-end-line="556" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/sun/misc/BASE64Encoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/validate/code/ValidateCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.11.RELEASE/spring-data-redis-2.1.11.RELEASE-sources.jar!/org/springframework/data/redis/core/ValueOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.6.RELEASE/spring-security-core-5.1.6.RELEASE-sources.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.6.RELEASE/spring-security-core-5.1.6.RELEASE-sources.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="192" selection-start-line="192" selection-end-line="192" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.10.RELEASE/spring-core-5.1.10.RELEASE-sources.jar!/org/springframework/core/Ordered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/UserDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/config/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.6.RELEASE/spring-security-web-5.1.6.RELEASE-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.6.RELEASE/spring-security-core-5.1.6.RELEASE-sources.jar!/org/springframework/security/authentication/AbstractAuthenticationToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="119" column="29" lean-forward="true" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.10.RELEASE/spring-web-5.1.10.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/controller/ValidateCodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="107" column="54" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#imageToBase64ByLocal#0;class#ValidateCodeController#0" />
-            <element signature="method#test#0;class#ValidateCodeController#0" />
-            <element signature="method#getRandColor#0;class#ValidateCodeController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.26/tomcat-embed-core-9.0.26-sources.jar!/org/apache/catalina/connector/RequestFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="919" selection-start-line="919" selection-end-line="919" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/constant/CommonConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="286">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/TokenAuthenticationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="520">
+          <caret line="46" column="35" lean-forward="true" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/belerweb/pinyin4j/2.5.1/pinyin4j-2.5.1-sources.jar!/net/sourceforge/pinyin4j/PinyinHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="1500" selection-start-line="1500" selection-end-line="1500" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/SecurityConfigurerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="91" column="70" lean-forward="true" selection-start-line="91" selection-start-column="70" selection-end-line="91" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/AbstractConfiguredSecurityBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
-          <folding>
-            <element signature="e#2541#2574#0" expanded="true" />
-            <element signature="e#5705#5706#0" expanded="true" />
-            <element signature="e#5754#5755#0" expanded="true" />
-            <element signature="e#6038#6039#0" expanded="true" />
-            <element signature="e#6090#6091#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="290" column="63" lean-forward="true" selection-start-line="290" selection-start-column="63" selection-end-line="290" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#15636#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.6.RELEASE/spring-security-web-5.1.6.RELEASE-sources.jar!/org/springframework/security/web/authentication/AuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.6.RELEASE/spring-security-web-5.1.6.RELEASE-sources.jar!/org/springframework/security/web/authentication/AuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/filter/ValidateCodeFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.6.RELEASE/spring-security-web-5.1.6.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="355" selection-start-line="355" selection-end-line="355" />
-          <folding>
-            <element signature="e#15297#15298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.6.RELEASE/spring-security-core-5.1.6.RELEASE-sources.jar!/org/springframework/security/authentication/ProviderManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="85" lean-forward="true" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/muxin-dev.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2132">
-          <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1612">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/config/ExtendSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3042">
+          <caret line="117" column="45" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/util/ChineseCharacterUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/service/MyFriendsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="19" column="93" selection-start-line="18" selection-start-column="13" selection-end-line="19" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/util/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3120">
+          <caret line="146" column="11" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1-sources.jar!/org/apache/commons/lang3/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="2906" column="73" lean-forward="true" selection-start-line="2906" selection-start-column="73" selection-end-line="2906" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/provider/HelloServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/lang/reflect/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17134">
+          <caret line="702" column="25" selection-start-line="702" selection-start-column="25" selection-end-line="702" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/provider/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/provider/MyServerBootstarp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="183" column="37" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/publicinterface/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/custom/NettyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/custom/ClientBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/bootstrap/AbstractBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3952">
+          <caret line="194" column="20" selection-start-line="194" selection-start-column="20" selection-end-line="194" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/custom/NettyClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dubborpc/provider/NettyServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/SmsCodeAuthenticationToken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        <state relative-caret-position="650">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/filter/SmsCodeAuthenticationFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/CustomHandler2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="505">
+          <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="532" column="70" lean-forward="true" selection-start-line="532" selection-start-column="70" selection-end-line="532" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/util/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="118" column="33" lean-forward="true" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="method#base64ToFile#0;class#FileUtils#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/security/Principal.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/ChannelOutboundInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+        <state relative-caret-position="250">
+          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/MyAuthenticationSuccessHandler.java">
+    <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="250">
+          <caret line="248" column="12" selection-start-line="248" selection-start-column="12" selection-end-line="248" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.58/fastjson-1.2.58-sources.jar!/com/alibaba/fastjson/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1211">
+          <caret line="285" column="35" selection-start-line="285" selection-start-column="24" selection-end-line="285" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/constant/MsgActionEnum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/filter/CrossFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/util/SpringContextHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="208">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/WSServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/DataContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/security/SmsCodeAuthenticationProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="60" />
+        <state relative-caret-position="234">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ChatMsgDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21606">
+          <caret line="965" selection-start-line="965" selection-end-line="965" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/entity/DBChatMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/entity/ChatMsgUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/dao/ChatMsgDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/constant/MsgSignFlagEnum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="90" column="79" selection-start-line="90" selection-start-column="53" selection-end-line="90" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/response/ResponseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wjyxin-html/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/muxin-dev.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/UserChannelRel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wjy/netty/ChatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>

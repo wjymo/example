@@ -16,7 +16,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     PasswordEncoder passwordEncoder;
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return new org.springframework.security.core.userdetails.User(username,passwordEncoder.encode("111"),true,true,true,true,
+        return new org.springframework.security.core.userdetails.User(username,passwordEncoder.encode("111")
+                ,true,true,true,true,
                 AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_ADMIN"));
     }
 

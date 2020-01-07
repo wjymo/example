@@ -60,8 +60,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.apply(extendSecurityConfig);
+        //放开swagger
+        http.authorizeRequests()
+                .antMatchers("/swagger-ui.html", "/swagger-resources/**"
+                        , "/images/**", "/webjars/**", "/v2/api-docs", "/configuration/ui"
+                        , "/configuration/security").permitAll();
         http.securityContext().securityContextRepository(new NullSecurityContextRepository());
         http.authorizeRequests().antMatchers("/code/*").permitAll();
+        http.authorizeRequests().antMatchers("/user/regist").permitAll();
+        http.authorizeRequests().antMatchers("/user/**").permitAll();
 //        http.authorizeRequests().anyRequest().access("@rbacService.hasPermission(request,authentication)");
         http.authorizeRequests().anyRequest().authenticated();
 

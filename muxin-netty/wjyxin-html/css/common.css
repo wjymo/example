@@ -1,0 +1,18 @@
+.receive_msg_class{
+    background-color: #DDDDDD;
+    width: 200px;
+    line-height: 50px;
+    float: left;
+    margin-right: 1100px;
+    margin-left: 400px;
+    margin-bottom: 40px;
+}
+.send_msg_class{
+    background-color: darkseagreen;
+    width: 200px;
+    line-height: 50px;
+    float: right;
+    margin-left: 1100px;
+    margin-right: 400px;
+    margin-bottom: 20px;
+}

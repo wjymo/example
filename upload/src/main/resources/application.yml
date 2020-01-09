@@ -1,0 +1,10 @@
+
+spring:
+  redis:
+    host: 172.168.1.108
+    port: 6379
+    password: gggyvw
+
+
+server:
+  port: 9999

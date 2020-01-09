@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="299de584-158c-4656-aa35-03fa6e1f0ed5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/src/main/java/com/wjy/xunwu/controller/HouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/src/main/java/com/wjy/xunwu/controller/HouseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/src/main/java/com/wjy/xunwu/service/search/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/src/main/java/com/wjy/xunwu/service/search/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/src/main/resources/esmappers/xunwu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/src/main/resources/esmappers/xunwu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/src/main/resources/templates/rent-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/src/main/resources/templates/rent-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/src/test/java/com/wjy/xunwu/ESTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/src/test/java/com/wjy/xunwu/ESTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/target/classes/com/wjy/xunwu/controller/HouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/target/classes/com/wjy/xunwu/controller/HouseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/target/classes/com/wjy/xunwu/service/search/SearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/target/classes/com/wjy/xunwu/service/search/SearchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/target/classes/esmappers/xunwu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/target/classes/esmappers/xunwu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/target/classes/templates/rent-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/target/classes/templates/rent-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xunwu/target/test-classes/com/wjy/xunwu/ESTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xunwu/target/test-classes/com/wjy/xunwu/ESTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../upload/src/main/java/com/wjy/upload/service/FileManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../muxin-netty/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../muxin-netty/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,12 +61,12 @@
     <session id="-290569711">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -85,7 +75,7 @@
           <entry key="dic" value="6" />
           <entry key="java" value="32" />
           <entry key="pom" value="3" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="13" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -94,7 +84,7 @@
           <entry key="CLASS" value="3" />
           <entry key="Dictionary" value="6" />
           <entry key="JAVA" value="32" />
-          <entry key="XML" value="15" />
+          <entry key="XML" value="16" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -116,10 +106,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/wjy/TestES.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
+            <state relative-caret-position="835">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -127,6 +117,16 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-416">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -269,8 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,6 +292,48 @@
               <item name="es-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="es-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="es-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="es-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="es-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wjy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="es-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="es-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wjy" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="es-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="es-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wjy" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="es-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="es-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wjy" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="es-test" type="b2602c69:ProjectViewProjectNode" />
@@ -341,7 +382,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,7 +394,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576574422942" />
-    <property name="last_opened_file_path" value="D:/workspace3/m2cn7s" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -510,6 +552,7 @@
       <workItem from="1575947793395" duration="6103000" />
       <workItem from="1576053922659" duration="5438000" />
       <workItem from="1576460257942" duration="4572000" />
+      <workItem from="1578537111964" duration="26000" />
     </task>
     <servers />
   </component>
@@ -546,12 +589,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54425000" />
+    <option name="totallyTimeSpent" value="54451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49871135" visible="true" weight="0.12739871" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49871135" visible="true" weight="0.19669509" />
       <window_info id="Structure" order="1" sideWeight="0.50128865" side_tool="true" weight="0.17643923" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -881,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="jar://D:/java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/io/FilenameFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
@@ -934,16 +970,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/esmapper/news.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/wjy/TestES.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
+        <state relative-caret-position="835">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -951,6 +980,21 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/esmapper/news.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-416">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
   <component name="masterDetails">

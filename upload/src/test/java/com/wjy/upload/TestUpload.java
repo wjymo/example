@@ -9,6 +9,11 @@ import org.springframework.data.redis.core.RedisTemplate;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.IntBuffer;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -77,9 +82,19 @@ public class TestUpload extends UploadApplicationTests {
     private UploadService uploadService;
     @Test
     public void testService() throws IOException, InterruptedException {
-        int byteSize=1024;
-        Map<String, Object> map = uploadService.multiUpload("D:\\hebin\\蘑菇(mrna和dna库)修改sql.txt", byteSize);
+        long start = System.currentTimeMillis();
+        int byteSize=1024*1024*20;
+//        Map<String, Object> map = uploadService.multiUpload("D:\\hebin\\蘑菇(mrna和dna库)修改sql.txt", byteSize);
+        Map<String, Object> map = uploadService.multiUpload("D:\\hebin\\bigfile4.txt", byteSize);
         String uploadId = (String)map.get("uploadId");
+        Integer count = (Integer) map.get("count");
+        int size =0;
+        Map<Object, Object> entries=new HashMap<>();
+        while (size<count){
+             entries = redisTemplate.opsForHash().entries("MP_"+uploadId);
+             size=entries.size();
+        }
+        System.out.println("分块上传耗时："+(System.currentTimeMillis()-start));
 //        System.out.println(uploadId);
 //        double uploadRate=0;
 //        do{
@@ -115,6 +130,45 @@ public class TestUpload extends UploadApplicationTests {
 
     }
 
+    @Test
+    public void testSha1() throws IOException, NoSuchAlgorithmException {
+        long start = System.currentTimeMillis();
+        File file=new File("D:\\hebin\\bigfile.txt");
+        String fileSha1 = FileUtils.getSha1ByNio2(file);
+        String fileSha2 = FileUtils.getSHA1Value(file);
+//        String fileSha11 = FileUtils.getFileSha1(file);
+        System.out.println(fileSha1);
+        System.out.println(fileSha2);
+        System.out.println("计算sha1耗时："+(System.currentTimeMillis()-start));
+//        System.out.println(fileSha11);
+    }
+
+    //生成1g的文件
+    @Test
+    public void testMappedByteBuffer(){
+        //512m
+        long length = 1L << 29;
+        //4g
+        long _4G = 1L << 32;
+        long _1G=_4G/4;
+        long _2G=_4G/2;
+        long cur = 0L;
+        try {
+            MappedByteBuffer mappedByteBuffer;
+            Random random = new Random();
+            while (cur < _1G) {
+                mappedByteBuffer = new RandomAccessFile("D:\\hebin\\bigfile5.txt", "rw").getChannel()
+                        .map(FileChannel.MapMode.READ_WRITE, cur, length);
+                IntBuffer intBuffer = mappedByteBuffer.asIntBuffer();
+                while (intBuffer.position() < intBuffer.capacity()) {
+                    intBuffer.put(random.nextInt());
+                }
+                cur += length;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 

@@ -1,5 +1,6 @@
 package com.wjy.paynative.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
@@ -29,13 +30,13 @@ import java.util.Map;
 public class AliController {
 
     @Autowired
+    private AlipayClient alipayClient;
+    @Autowired
     private AliPayProperty aliPayProperty;
+
     @GetMapping("/pay")
     public void aliPay(@RequestParam String orderId,@RequestParam String amount, HttpServletResponse response) throws IOException {
         //实例化客户端,填入所需参数
-        AlipayClient alipayClient = new DefaultAlipayClient(aliPayProperty.getGateway_url(),
-                aliPayProperty.getApp_id(), aliPayProperty.getApp_private_key(), aliPayProperty.getFormat()
-                , aliPayProperty.getCharset(), aliPayProperty.getAlipay_public_key(), aliPayProperty.getSign_type());
         AlipayTradePagePayRequest request = new AlipayTradePagePayRequest();
         //在公共参数中设置回跳和通知地址
         request.setReturnUrl(aliPayProperty.getReturn_url());
@@ -47,9 +48,10 @@ public class AliController {
         //付款金额，必填
         String total_amount = amount;
         //订单名称，必填
-        String subject = "胡尧牛逼";
+        String subject = "2795713-胡尧杯具订单";
+        subject = "胡尧杯具订单";
         //商品描述，可空
-        String body = "";
+        String body = "几个杯具";
         request.setBizContent("{\"out_trade_no\":\""+ out_trade_no +"\","
                 + "\"total_amount\":\""+ total_amount +"\","
                 + "\"subject\":\""+ subject +"\","
@@ -61,6 +63,7 @@ public class AliController {
         } catch (AlipayApiException e) {
             e.printStackTrace();
         }
+        log.info("生成的表单："+ JSON.toJSONString(form));
         response.setContentType("text/html;charset=" + aliPayProperty.getCharset());
         response.getWriter().write(form);// 直接将完整的表单html输出到页面
         response.getWriter().flush();
@@ -72,7 +75,8 @@ public class AliController {
     @ResponseBody
     public String asyncNotify(@RequestBody String notifyData,HttpServletRequest request) throws UnsupportedEncodingException, AlipayApiException {
         log.info("notifyData: {}",notifyData);
-        Map<String, String> params = new HashMap<String, String>();
+//        Map map = JSON.parseObject(notifyData, Map.class);
+        Map<String, String> params = new HashMap<>();
         Map<String, String[]> requestParams = request.getParameterMap();
         for (Iterator<String> iter = requestParams.keySet().iterator(); iter.hasNext();) {
             String name = (String) iter.next();
@@ -85,7 +89,7 @@ public class AliController {
             valueStr = new String(valueStr.getBytes("utf-8"), "utf-8");
             params.put(name, valueStr);
         }
-        log.info("params: {}",params);//查看参数都有哪些
+        log.info("params: {}",JSON.toJSONString(params));//查看参数都有哪些
 
         String out_trade_no = new String(request.getParameter("out_trade_no").getBytes("ISO-8859-1"), "utf-8");
         String trade_no = new String(request.getParameter("trade_no").getBytes("ISO-8859-1"), "utf-8");

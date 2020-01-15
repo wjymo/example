@@ -25,8 +25,9 @@ public class DemoBase {
 	public static String encoding = "UTF-8";
 	
 	//全渠道固定值
-	public static String version = SDKConfig.getConfig().getVersion();
-	
+//	public static String version = SDKConfig.getConfig().getVersion();
+	public static String version = "5.1.0";
+
 	//后台服务对应的写法参照 FrontRcvResponse.java
 	public static String frontUrl = SDKConfig.getConfig().getFrontUrl();
 

@@ -245,7 +245,8 @@ public class CertUtil {
 		CertificateFactory cf = null;
 		FileInputStream in = null;
 		//相对路径变为绝对路径
-		path = getRealCertPath() + path;
+		path = path;
+//		path = getRealCertPath() + path;
 		try {
 			cf = CertificateFactory.getInstance("X.509", "BC");
 			in = new FileInputStream(path);
@@ -455,7 +456,8 @@ public class CertUtil {
 			KeyStore ks = KeyStore.getInstance(type, "BC");
 			log.info("Load RSA CertPath=[" + pfxkeyfile + "],Pwd=["+ keypwd + "],type=["+type+"]");
 
-			File file=new File(getRealCertPath() + pfxkeyfile);
+//			File file=new File(getRealCertPath() + pfxkeyfile);
+			File file=new File(pfxkeyfile);
 			fis = new FileInputStream(file);
 			char[] nPassword = null;
 			nPassword = null == keypwd || "".equals(keypwd.trim()) ? null: keypwd.toCharArray();

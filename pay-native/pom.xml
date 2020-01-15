@@ -38,10 +38,23 @@
             <artifactId>alipay-sdk-java</artifactId>
             <version>4.8.10.ALL</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.wxpay/wxpay-sdk -->
+        <dependency>
+            <groupId>com.github.wxpay</groupId>
+            <artifactId>wxpay-sdk</artifactId>
+            <version>0.0.3</version>
+            <!--<version>3.0.9</version>-->
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <dependency>

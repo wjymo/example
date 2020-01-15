@@ -6,7 +6,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 
 import java.io.*;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 
+/**
+ * 通过bio分割文件
+ */
 @Slf4j
 public class SplitRunnable implements Runnable {
     int byteSize;

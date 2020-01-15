@@ -4,7 +4,8 @@ spring:
     host: 172.168.1.108
     port: 6379
     password: gggyvw
-
-
+  shell:
+    interactive:
+      enabled: false
 server:
   port: 9999

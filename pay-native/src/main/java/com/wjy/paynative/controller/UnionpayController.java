@@ -106,7 +106,8 @@ public class UnionpayController {
         /**请求参数设置完毕，以下对请求参数进行签名并生成html表单，将表单写入浏览器跳转打开银联页面**/
         Map<String, String> submitFromData = AcpService.sign(requestData,DemoBase.encoding);  //报文中certId,signature的值是在signData方法中获取并自动赋值的，只要证书配置正确即可。
 
-        String requestFrontUrl = SDKConfig.getConfig().getFrontRequestUrl();  //获取请求银联的前台地址：对应属性文件acp_sdk.properties文件中的acpsdk.frontTransUrl
+//        String requestFrontUrl = SDKConfig.getConfig().getFrontRequestUrl();  //获取请求银联的前台地址：对应属性文件acp_sdk.properties文件中的acpsdk.frontTransUrl
+        String requestFrontUrl = "https://gateway.test.95516.com/gateway/api/frontTransReq.do";  //获取请求银联的前台地址：对应属性文件acp_sdk.properties文件中的acpsdk.frontTransUrl
         String html = AcpService.createAutoFormHtml(requestFrontUrl, submitFromData,DemoBase.encoding);   //生成自动跳转的Html表单
 
         log.info("打印请求HTML，此为请求报文，为联调排查问题的依据："+html);
@@ -191,7 +192,7 @@ public class UnionpayController {
      * @param response
      * @throws IOException
      */
-    @PostMapping(value = "/front")
+    @GetMapping(value = "/front")
     public void frontRcvResponse(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
         log.info("FrontRcvResponse前台接收报文返回开始");

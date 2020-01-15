@@ -2,6 +2,7 @@ package com.wjy.upload.service;
 
 import ch.qos.logback.core.joran.event.InPlayListener;
 import com.wjy.upload.runner.MergeRunnable;
+import com.wjy.upload.runner.SplitNioRunnable;
 import com.wjy.upload.runner.SplitRunnable;
 import com.wjy.upload.util.FileUtils;
 import lombok.extern.log4j.Log4j2;
@@ -32,20 +33,20 @@ public class UploadService {
      * @param filePath
      * @param byteSize
      */
-    public Map<String,Object>  multiUpload(String filePath, int byteSize){
+    public Map<String,Object>  multiUpload(String filePath, Integer byteSize){
         File file=new File(filePath);
         //获取文件原信息及摘要
         String absolutePath = file.getAbsolutePath();
         String name = file.getName();
         long length = file.length();
-        String fileSha1 = FileUtils.getFileSha1(file);
+//        String fileSha1 = FileUtils.getFileSha1(file);
 
         int count = (int) Math.ceil(length / (double) byteSize);
         String uploadId= UUID.randomUUID().toString().substring(0,5)+System.currentTimeMillis();
 
         //将分块上传信息存入redis
         redisTemplate.opsForHash().putIfAbsent("MP_"+uploadId,"chunkcount", count);
-        redisTemplate.opsForHash().putIfAbsent("MP_"+uploadId,"filehash", fileSha1);
+//        redisTemplate.opsForHash().putIfAbsent("MP_"+uploadId,"filehash", fileSha1);
         redisTemplate.opsForHash().putIfAbsent("MP_"+uploadId,"filesize", length);
         redisTemplate.opsForHash().putIfAbsent("MP_"+uploadId,"filepath", absolutePath);
         redisTemplate.opsForHash().putIfAbsent("MP_"+uploadId,"byteSize", byteSize);
@@ -56,9 +57,17 @@ public class UploadService {
         if(!fileDir.exists()){
             fileDir.mkdirs();
         }
+        long longByteSize = byteSize.longValue();
         for (int i = 0; i < count; i++) {
             String partFilePath = path + "\\"+(i+1);
-            threadPoolExecutor.execute(new SplitRunnable(byteSize, partFilePath,file,i * byteSize,
+            long startPos=i * longByteSize;
+            if(i==count-1){
+                long l = length - startPos;
+                if(longByteSize>l){
+                    byteSize=(int)l;
+                }
+            }
+            threadPoolExecutor.execute(new SplitNioRunnable(byteSize, partFilePath,file,startPos,
                      redisTemplate,uploadId,i));
         }
         Map<String,Object> map=new HashMap<>();
